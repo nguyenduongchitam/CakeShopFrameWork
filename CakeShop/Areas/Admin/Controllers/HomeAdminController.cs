@@ -20,6 +20,7 @@ namespace CakeShop.Areas.Admin.Controllers
         }
         public IActionResult quanlysanpham()
         {
+      
             return View();
         }
         public IActionResult quanlyhoadon()
