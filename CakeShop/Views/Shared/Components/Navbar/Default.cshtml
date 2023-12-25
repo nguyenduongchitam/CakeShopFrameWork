@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<CakeShop.Models.Category>
+
+<li class="nav-item">
+    <div class="dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-top: 0; color:#4d2600;">
+            Sản phẩm
+        </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/Products">Tất cả sản phẩm</a></li>
+            @{
+                foreach (var item in Model)
+                {
+                    <li>
+                        <a class="dropdown-item" asp-controller="Products" asp-action="Category" asp-route-id="@item.category_id">@item.name</a>
+                    </li>
+                }
+            }
+        </ul>
+    </div>
+</li>
