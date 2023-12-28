@@ -8,42 +8,64 @@
 <div class="container-fluid pt-5">
     <div class="row px-xl-5">
         <div class="col-lg-8 table-responsive mb-5">
-            <table class="table table-bordered text-center mb-0">
-                <thead class="bg-secondary text-dark">
-                    <tr>
-                        <th>Products</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Total</th>
-                        <th>Remove</th>
-                    </tr>
-                </thead>
-                <tbody class="align-middle">
-                    @foreach (var line in Model.Lines) {
+            @if (Model != null)
+            {
+                <table class="table table-bordered text-center mb-0">
+                    <thead class="bg-secondary text-dark">
                         <tr>
-                        <td class="align-middle"><img src="img/@line.Product.thumbnail" alt="" style="width: 50px;">@line.Product.title</td>
-                        <td class="align-middle">$@(@line.Product.price-line.Product.discount_price)</td>
-                        <td class="align-middle">
-                            <div class="input-group quantity mx-auto" style="width: 100px;">
-                                <div class="input-group-btn">
-                                        <a href="/Cart/DecreaseCart/?productId=@line.Product.product_id" class="btn btn-sm btn-primary btn-minus">
-                                        <i class="fa fa-minus"></i>
-                                    </a>
-                                </div>
-                                <input type="text" class="form-control form-control-sm bg-secondary text-center" value="@line.Quantity">
-                                <div class="input-group-btn">
-                                        <a href="/Cart/AddToCart/?productId=@line.Product.product_id" class="btn btn-sm btn-primary btn-plus">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </td>
-                            <td class="align-middle">$@((@line.Product.price - line.Product.discount_price) * line.Quantity)</td>
-                        <td class="align-middle"><a href="/Cart/RemoveFromCart/?productId=@line.Product.product_id" class="btn btn-sm btn-primary"><i class="fa fa-times"></i></a></td>
-                    </tr>
-                    }
-                </tbody>
-            </table>
+                            <th>Products</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody class="align-middle">
+
+                        @foreach (var line in Model.Lines)
+                        {
+                            <tr>
+                                <td class="align-middle"><img src="img/@line.Product.thumbnail" alt="" style="width: 50px;">@line.Product.title</td>
+                                <td class="align-middle">@(@line.Product.price - line.Product.discount_price) VND</td>
+                                <td class="align-middle">
+                                    <div class="input-group quantity mx-auto" style="width: 100px;">
+                                        <div class="input-group-btn">
+                                            <a href="/Cart/DecreaseCart/?productId=@line.Product.product_id" class="btn btn-sm btn-primary btn-minus">
+                                                <i class="fa fa-minus"></i>
+                                            </a>
+                                        </div>
+                                        <input type="text" class="form-control form-control-sm bg-secondary text-center" value="@line.Quantity">
+                                        <div class="input-group-btn">
+                                            <a href="/Cart/AddToCart/?productId=@line.Product.product_id" class="btn btn-sm btn-primary btn-plus">
+                                                <i class="fa fa-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="align-middle">@((@line.Product.price - line.Product.discount_price) * line.Quantity) VND</td>
+                                <td class="align-middle"><a href="/Cart/RemoveFromCart/?productId=@line.Product.product_id" class="btn btn-sm btn-primary"><i class="fa fa-times"></i></a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                <div class="cartnone">
+                    <div class="container">
+                        <div>
+                            <img class="imagee" src="./img/cart-empty.png" alt="img">
+                        </div>
+                        <div>
+                            <p class="ifmt">Giỏ hàng không có gì cả!!!</p>
+                            <p class="ifmt1"><i>Bạn cần ít nhất 1 sản phẩm trong giỏ hàng</i></p>
+                        </div>
+                        <div>
+                            <button class="but"><a class="nav-link active" aria-current="page" href="/Home" style="padding-top: 0; color:#4d2600;"> Quay lại Trang sản phẩm</a></button>
+                        </div>
+                    </div>
+                </div>
+            }
         </div>
         <div class="col-lg-4">
             <form class="mb-5" action="">
@@ -61,19 +83,32 @@
                 <div class="card-body">
                     <div class="d-flex justify-content-between mb-3 pt-1">
                         <h6 class="font-weight-medium">Subtotal</h6>
-                        <h6 class="font-weight-medium">$@Model.ComputeTotalValue()</h6>
+                        @if (Model != null)
+                        {
+                            <h6 class="font-weight-medium">@Model.ComputeTotalValue()VND</h6>
+                        }
+                        else{
+                            <h6 class="font-weight-medium">0VND</h6>
+                        }
                     </div>
                     <div class="d-flex justify-content-between">
                         <h6 class="font-weight-medium">Shipping</h6>
-                        <h6 class="font-weight-medium">$10</h6>
+                        <h6 class="font-weight-medium">10000VND</h6>
                     </div>
                 </div>
                 <div class="card-footer border-secondary bg-transparent">
                     <div class="d-flex justify-content-between mt-2">
                         <h5 class="font-weight-bold">Total</h5>
-                        <h5 class="font-weight-bold">$@(@Model.ComputeTotalValue()+10)</h5>
+                        @if (Model != null)
+                        {
+                            <h5 class="font-weight-bold">@(@Model.ComputeTotalValue()+10000)VND</h5>
+                        }
+                        else
+                        {
+                            <h5 class="font-weight-bold">10000VND</h5>
+                        }
                     </div>
-                    <button class="btn btn-block btn-primary my-3 py-3">Proceed To Checkout</button>
+                    <button class="btn btn-block btn-primary my-3 py-3"><a href="/Cart/CheckOut">Proceed To Checkout</a></button>
                 </div>
             </div>
         </div>

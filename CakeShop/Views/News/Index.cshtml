@@ -1,0 +1,42 @@
+﻿@model IEnumerable<CakeShop.Models.News>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<body>
+    <div class="newbody">
+        <div class="wrapper">
+            <h1>Tin tức</h1>
+            <div class="main">
+                <ul>
+                    @foreach (var item in Model)
+                    {
+                        <div class="back">
+                            <a href="#">
+                                <label>@item.news_id</label>
+                                <img src="./img/@item.thumbnail" height="350px" width="350px" alt="image">
+                                <p class="product_list">@item.title </p>
+                            </a>
+                        </div>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop()) {
+                $('.clickk').fadeIn();
+            } else {
+                $(".clickk").fadeOut();
+            }
+        });
+        $(".clickk").click(function () {
+            $('html,body').animate({ scrollTop: 0 }, 500);
+        });
+    });
+</script>

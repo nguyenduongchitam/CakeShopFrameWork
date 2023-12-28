@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oFjpyriv5OeEE7tqf4c//rtVh7efuBOW+PLk9EAK4RE=",
+  "Hash": "7AcjUySwCb/Z8XTT2j2OTajPleqlIqYJbWFR3sSgGKU=",
   "Source": "CakeShop",
   "BasePath": "_content/CakeShop",
   "Mode": "Default",
@@ -2208,6 +2208,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Header-Logo.png"
+    },
+    {
+      "Identity": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\khai-truong.jpg",
+      "SourceId": "CakeShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\",
+      "BasePath": "_content/CakeShop",
+      "RelativePath": "img/khai-truong.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\khai-truong.jpg"
     },
     {
       "Identity": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\lion.jpg",

@@ -45,38 +45,67 @@
 						<a class="review-link" href="#">10 Review(s) | Add your review</a>
 					</div>
 					<div>
-						<h3 class="product-price">$980.00 <del class="product-old-price">$@Model.price</del></h3>
+						<h3 class="product-price">@(@Model.price - Model.discount_price) VND <del class="product-old-price">@Model.price VND</del></h3>
 						<span class="product-available">In Stock</span>
 					</div>
 					<p>@Model.description</p>
 
-					<div class="product-options">
-						<label>
-							Size
-							<select class="input-select">
-								<option value="0">X</option>
-							</select>
-						</label>
-						<label>
-							Color
-							<select class="input-select">
-								<option value="0">Red</option>
-							</select>
-						</label>
-					</div>
 
 					<div class="add-to-cart">
 						<div class="qty-label">
 							Qty
 							<div class="input-number">
-								<input type="number">
+								<input id="quantity-input" type="number" min="1" max="100" step="1" value="1">
 								<span class="qty-up">+</span>
 								<span class="qty-down">-</span>
 							</div>
 						</div>
-						<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+						<button class="add-to-cart-btn">
+							<i class="fa fa-shopping-cart"></i>
+							<a id="add-to-cart-link" href="#">add to cart</a>
+						</button>
 					</div>
 
+					<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+					<script>
+						$(document).ready(function () {
+							var intervalId = null;
+
+							$(".qty-down").on("mousedown", function () {
+								intervalId = setInterval(decreaseQuantity, 200);
+							});
+
+							$(".qty-up").on("mousedown", function () {
+								intervalId = setInterval(increaseQuantity, 200);
+							});
+
+							$(".qty-down, .qty-up").on("mouseup", function () {
+								clearInterval(intervalId);
+							});
+
+							function decreaseQuantity() {
+								var now = parseInt($("#quantity-input").val());
+								if (!isNaN(now) && now > 1) {
+									$("#quantity-input").val(now - 1);
+								}
+							}
+
+							function increaseQuantity() {
+								var now = parseInt($("#quantity-input").val());
+								if (!isNaN(now) && now < 100) {
+									$("#quantity-input").val(now + 1);
+								}
+							}
+
+							$("#add-to-cart-link").on("click", function (event) {
+								event.preventDefault();
+								const productId = '@Model.product_id';
+								const quantity = $("#quantity-input").val();
+								const url = `/Cart/AddMultyToCart?productId=${productId}&qty=${quantity}`;
+								window.location.href = url;
+							});
+						});
+					</script>
 					<ul class="product-btns">
 						<li><a href="#"><i class="fa fa-heart-o"></i> add to wishlist</a></li>
 						<li><a href="#"><i class="fa fa-exchange"></i> add to compare</a></li>
@@ -84,8 +113,7 @@
 
 					<ul class="product-links">
 						<li>Category:</li>
-						<li><a href="#">Headphones</a></li>
-						<li><a href="#">Accessories</a></li>
+						<li><a href="/Products/Category/?id=@Model.category_id">@ViewData["name"]</a></li>
 					</ul>
 
 					<ul class="product-links">

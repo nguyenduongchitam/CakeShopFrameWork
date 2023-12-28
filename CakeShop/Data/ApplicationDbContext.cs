@@ -12,5 +12,6 @@ namespace CakeShop.Data
         }
         public DbSet<CakeShop.Models.Category>? Category { get; set; }
         public DbSet<CakeShop.Models.Product>? Product { get; set; }
+        public DbSet<CakeShop.Models.News>? News { get; set; }
     }
 }

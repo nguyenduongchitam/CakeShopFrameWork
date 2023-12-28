@@ -76,24 +76,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/trường/Năm 3/Xây dựng httt trên framework/CakeShop/CakeShop/Views/Aboutus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXR1c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/trường/Năm 3/Xây dựng httt trên framework/CakeShop/CakeShop/Views/Cart/Cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/trường/Năm 3/Xây dựng httt trên framework/CakeShop/CakeShop/Views/Categories/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
+[D:/trường/Năm 3/Xây dựng httt trên framework/CakeShop/CakeShop/Views/Cart/CheckOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDaGVja091dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/trường/Năm 3/Xây dựng httt trên framework/CakeShop/CakeShop/Views/Categories/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
+[D:/trường/Năm 3/Xây dựng httt trên framework/CakeShop/CakeShop/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/trường/Năm 3/Xây dựng httt trên framework/CakeShop/CakeShop/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/trường/Năm 3/Xây dựng httt trên framework/CakeShop/CakeShop/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[D:/trường/Năm 3/Xây dựng httt trên framework/CakeShop/CakeShop/Views/News/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/trường/Năm 3/Xây dựng httt trên framework/CakeShop/CakeShop/Views/Products/Details.cshtml]
@@ -126,6 +130,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/trường/Năm 3/Xây dựng httt trên framework/CakeShop/CakeShop/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/trường/Năm 3/Xây dựng httt trên framework/CakeShop/CakeShop/Views/Shared/_ReturnProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SZXR1cm5Qcm9kdWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/trường/Năm 3/Xây dựng httt trên framework/CakeShop/CakeShop/Views/Shared/_ValidationScriptsPartial.cshtml]

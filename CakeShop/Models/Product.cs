@@ -19,5 +19,6 @@ namespace CakeShop.Models
         public string thumbnail { get; set; }
         public DateTime? created_at { get; set; } = default(DateTime?);
         public DateTime? updated_at { get; set ; }
+        public virtual Category? Category { get; set; }
     }
 }

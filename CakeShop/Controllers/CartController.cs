@@ -33,6 +33,18 @@ namespace CakeShop.Controllers
 			}
 			return View("Cart", Cart);
 		}
+		public IActionResult AddMultyToCart(int productID,int qty)
+		{
+			Product? product = _context.Product?
+			.FirstOrDefault(p => p.product_id == productID);
+			if (product != null)
+			{
+				Cart = HttpContext.Session.GetJson<Cart>("cart") ?? new Cart();
+				Cart.AddItem(product, qty);
+				HttpContext.Session.SetJson("cart", Cart);
+			}
+			return View("Cart", Cart);
+		}
 		public IActionResult RemoveFromCart(int productID)
 		{
 			Product? product = _context.Product?
@@ -43,6 +55,7 @@ namespace CakeShop.Controllers
 				Cart.RemoveLine(product);
 				HttpContext.Session.SetJson("cart", Cart);
 			}
+			
 			return View("Cart", Cart);
 		}
         public IActionResult DecreaseCart(int productID)
@@ -57,5 +70,9 @@ namespace CakeShop.Controllers
             }
             return View("Cart", Cart);
         }
+		public IActionResult CheckOut()
+		{
+			return View(HttpContext.Session.GetJson<Cart>("cart"));
+		}
     }
 }

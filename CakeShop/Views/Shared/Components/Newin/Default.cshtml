@@ -33,9 +33,8 @@
 										</div>
 									</div>
 									<div class="product-body">
-										<p class="product-category">Category</p>
 											<h3 class="product-name"><a asp-controller="Products" asp-action="Details" asp-route-id="@item.product_id">@item.title</a></h3>
-											<h4 class="product-price">$@(@item.price - @item.discount_price) <del class="product-old-price">$@item.price</del></h4>
+											<h4 class="product-price">@(@item.price - @item.discount_price) VND <del class="product-old-price">@item.price VND</del></h4>
 										<div class="product-rating">
 											<i class="fa fa-star"></i>
 											<i class="fa fa-star"></i>
@@ -50,7 +49,7 @@
 										</div>
 									</div>
 									<div class="add-to-cart">
-										<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+											<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> <a href="/Cart/AddToCart/?productId=@item.product_id">add to cart</a></button>
 									</div>
 								</div>
 								<!-- /product -->

@@ -10,26 +10,26 @@ using CakeShop.Models;
 
 namespace CakeShop.Controllers
 {
-    public class CategoriesController : Controller
+    public class NewsController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public CategoriesController(ApplicationDbContext context)
+        public NewsController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Categories
+        // GET: News
         public async Task<IActionResult> Index()
         {
-              return _context.Category != null ? 
-                          View(await _context.Category.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Category'  is null.");
+              return _context.News != null ? 
+                          View(await _context.News.ToListAsync()) :
+                          Problem("Entity set 'ApplicationDbContext.News'  is null.");
         }
 
-        private bool CategoryExists(int id)
+        private bool NewsExists(int id)
         {
-          return (_context.Category?.Any(e => e.category_id == id)).GetValueOrDefault();
+          return (_context.News?.Any(e => e.news_id == id)).GetValueOrDefault();
         }
     }
 }

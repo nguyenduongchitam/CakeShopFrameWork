@@ -4,7 +4,14 @@
 @{
 }
 @model Cart
-<a class="nav-link active" aria-current="page" href="/Cart" style="padding-top: 0; color:#4d2600;">
-    <i class="bi bi-basket2 account bigger-icon"></i>
-    <span class="badge">@Model?.Lines.Count</span>
+<a class="btn border" aria-current="page" href="/Cart">
+    <i class="fas fa-shopping-cart text-primary"></i>
+    @if (@Model?.Lines.Count > 0)
+    {
+        <span class="badge">@Model?.Lines.Count</span>
+    }
+    else
+    {
+        <span class="badge">0</span>
+    }
 </a>

@@ -1,5 +1,6 @@
 ﻿using CakeShop.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace CakeShop.Components
@@ -12,9 +13,10 @@ namespace CakeShop.Components
         {
             _context = context;
         }
-        public IViewComponentResult Invoke()
+        public async Task<IViewComponentResult> InvokeAsync()
         {
-            return View(_context.Product.ToList());
+			
+			return View(_context.Product.ToList());
         }
     }
 }
