@@ -1,7 +1,8 @@
 ﻿@model CakeShop.Models.Product
 
 @{
-    ViewData["Title"] = "Details";
+	ViewData["Title"] = "Details";
+	ViewData["ID"] = Model.category_id;
 }
 
 <!-- SECTION -->
@@ -14,7 +15,7 @@
 			<div class="col-md-5 col-md-push-2">
 				<div id="product-main-img">
 					<div class="product-preview">
-						<img src="./img/@Model.thumbnail" alt="">
+						<img src="~/img/@Model.thumbnail" alt="">
 					</div>
 					
 				</div>
@@ -24,7 +25,7 @@
 			<div class="col-md-2  col-md-pull-5">
 				<div id="product-imgs">
 					<div class="product-preview">
-						<img src="./img/@Model.thumbnail" alt="">
+						<img src="~/img/@Model.thumbnail" alt="">
 					</div>
 
 				</div>
@@ -342,3 +343,4 @@
 	<!-- /container -->
 </div>
 <!-- /SECTION -->
+@await Component.InvokeAsync("RelatedProducts")

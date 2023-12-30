@@ -93,6 +93,7 @@ namespace CakeShop.Controllers
             }
             var category = await _context.Category.FirstOrDefaultAsync(m => m.category_id == product.category_id);
             ViewData["name"] =category.name;
+            ViewData["id"] = category.category_id;
             return View(product);
         }
 		// GET: Products/Categories/5

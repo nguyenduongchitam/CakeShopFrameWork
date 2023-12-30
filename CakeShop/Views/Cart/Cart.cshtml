@@ -25,7 +25,7 @@
                         @foreach (var line in Model.Lines)
                         {
                             <tr>
-                                <td class="align-middle"><img src="img/@line.Product.thumbnail" alt="" style="width: 50px;">@line.Product.title</td>
+                                <td class="align-middle"><img src="~/img/@line.Product.thumbnail" alt="" style="width: 50px;"><a asp-controller="Products" asp-action="Details" asp-route-id="@line.Product.product_id">@line.Product.title</a></td>
                                 <td class="align-middle">@(@line.Product.price - line.Product.discount_price) VND</td>
                                 <td class="align-middle">
                                     <div class="input-group quantity mx-auto" style="width: 100px;">
@@ -54,7 +54,7 @@
                 <div class="cartnone">
                     <div class="container">
                         <div>
-                            <img class="imagee" src="./img/cart-empty.png" alt="img">
+                            <img class="imagee" src="~/img/cart-empty.png" alt="img">
                         </div>
                         <div>
                             <p class="ifmt">Giỏ hàng không có gì cả!!!</p>
