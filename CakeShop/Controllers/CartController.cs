@@ -55,7 +55,6 @@ namespace CakeShop.Controllers
 				Cart.RemoveLine(product);
 				HttpContext.Session.SetJson("cart", Cart);
 			}
-			
 			return View("Cart", Cart);
 		}
         public IActionResult DecreaseCart(int productID)
@@ -73,6 +72,10 @@ namespace CakeShop.Controllers
 		public IActionResult CheckOut()
 		{
 			return View(HttpContext.Session.GetJson<Cart>("cart"));
+		}
+		public IActionResult ThankYou()
+		{
+			return View("ThankYou");
 		}
     }
 }

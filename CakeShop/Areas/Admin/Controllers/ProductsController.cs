@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+
 using CakeShop.Data;
 using CakeShop.Models;
+using System.Security.Claims;
 
 namespace CakeShop.Areas.Admin.Controllers
 {
@@ -89,35 +86,46 @@ namespace CakeShop.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("product_id,category_id,title,price,discount_price,description,thumbnail,created_at,updated_at")] Product product)
-        {
-            if (id != product.product_id)
-            {
-                return NotFound();
-            }
+        //public async Task<IActionResult> Edit(int id, [Bind("product_id,category_id,title,price,discount_price,description,thumbnail,created_at,updated_at")] Product product)
+        //{
+        //    if (id != product.product_id)
+        //    {
+        //        return NotFound();
+        //    }
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(product);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!ProductExists(product.product_id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(product);
-        }
+        //    if (ModelState.IsValid)
+        //    {
+        //        var productEdit = _context.Product.Find(id);
+        //        productEdit.title = Utilities.ToTitleCase(product.title);
+        //        productEdit.product_id = product.product_id;
+        //        productEdit.price = product.price;
+        //        productEdit.discount_price = product.discount_price;
+        //        productEdit.thumbnail = product.thumbnail;
+        //        productEdit.Ram = product.Ram;
+        //        productEdit.BrandId = product.BrandId;
+        //        productEdit.CategoryId = product.CategoryId;
+        //        productEdit.Description = product.Description;
+        //        if (fThumb != null)
+        //        {
+        //            string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "img", "product", product.Image);
+        //            if (System.IO.File.Exists(path))
+        //            {
+        //                System.IO.File.Delete(path);
+        //            }
+        //            string extension = Path.GetExtension(fThumb.FileName);
+        //            productEdit.Image = Utilities.SEOUrl(productEdit.Name) + $"-{productEdit.Id}" + extension;
+        //            await Utilities.UploadFile(fThumb, @"product", productEdit.Image);
+
+        //        }
+        //        productEdit.UpdateUserId = User.FindFirstValue(Const.ADMINIDSESSION).ToString();
+        //        productEdit.UpdatedAt = DateTime.Now;
+        //        _context.Products.Update(productEdit);
+        //        await _context.SaveChangesAsync();
+        //        _notyfService.Success("Cập nhật sản phẩm thành công");
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    return View(product);
+        //}
 
         // GET: Admin/Products/Delete/5
         public async Task<IActionResult> Delete(int? id)

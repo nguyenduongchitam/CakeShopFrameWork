@@ -4,57 +4,64 @@
 @{
 }
 @model Cart
+<script src="https://cdn.ckeditor.com/ckeditor5/40.2.0/classic/ckeditor.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <!-- Checkout Start -->
 <div class="container-fluid pt-5">
     <div class="row px-xl-5">
         <div class="col-lg-8">
-            <div class="mb-4">
+            <div class="mb-4" asp-action="Checkout" method="post">
                 <h4 class="font-weight-semi-bold mb-4">Billing Address</h4>
                 <div class="row">
                     <div class="col-md-6 form-group">
-                        <label>Full Name</label>
-                        <input class="form-control" type="text" placeholder="John">
+                        <label>Họ và tên</label>
+                        <input class="form-control" type="text" placeholder="Nguyễn Văn A" >
                     </div>
                     <div class="col-md-6 form-group">
                         <label>E-mail</label>
                         <input class="form-control" type="text" placeholder="example@email.com">
                     </div>
                     <div class="col-md-6 form-group">
-                        <label>Mobile</label>
-                        <input class="form-control" type="text" placeholder="+123 456 789">
+                        <label>Số điện thoại</label>
+                        <input class="form-control" type="text" placeholder="0979599999">
                     </div>
                     
                     <div class="col-md-6 form-group">
-                        <label>City</label>
-                        <select class="custom-select">
-                            <option selected>United States</option>
-                            <option>Afghanistan</option>
-                            <option>Albania</option>
-                            <option>Algeria</option>
+                        <label>Chọn Tỉnh/ Thành phốx</label>
+                        <select name="city" class="form-select form-select-sm mb-3" id="city" aria-label=".form-select-sm">
+                            <option value="" selected> Tỉnh/ Thành phố</option>
                         </select>
                     </div>
                     <div class="col-md-6 form-group">
-                        <label>District</label>
-                        <input class="form-control" type="text" placeholder="">
+                        <label>Chọn Quận/ Huyện</label>
+                        <select name="district" class="form-select form-select-sm mb-3" id="district" aria-label=".form-select-sm">
+                            <option value="" selected>Quận/ Huyện</option>
+                        </select>
                     </div>
                     <div class="col-md-6 form-group">
-                        <label>Ward</label>
-                        <input class="form-control" type="text" placeholder="">
+                        <label>Chọn Phường/ Xã</label>
+                        <select name="ward" class="form-select form-select-sm" id="ward" aria-label=".form-select-sm">
+                            <option value="" selected>Phường/ Xã</option>
+                            </select>
                     </div>
                     <div class="col-md-6 form-group">
-                        <label>Note</label>
-                        <input class="form-control" type="text" placeholder="123">
+                        <label>Địa chỉ nhận hàng</label>
+                        <input type="text" name="address"></input>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label>Ghi chú</label> 
+                        <input class="form-control" type="text" placeholder="" id="Note">
                     </div>
                     <div class="col-md-12 form-group">
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="newaccount">
-                            <label class="custom-control-label" for="newaccount">Create an account</label>
+                            <label class="custom-control-label" for="newaccount">Tạo tài khoản mới</label>
                         </div>
                     </div>
                     <div class="col-md-12 form-group">
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="shipto">
-                            <label class="custom-control-label" for="shipto" data-toggle="collapse" data-target="#shipping-address">Ship to different address</label>
+                            <label class="custom-control-label" for="shipto" data-toggle="collapse" data-target="#shipping-address">Gửi tới địa chỉ khác</label>
                         </div>
                     </div>
                 </div>
@@ -63,49 +70,42 @@
                 <h4 class="font-weight-semi-bold mb-4">Shipping Address</h4>
                 <div class="row">
                     <div class="col-md-6 form-group">
-                        <label>First Name</label>
-                        <input class="form-control" type="text" placeholder="John">
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <label>Last Name</label>
-                        <input class="form-control" type="text" placeholder="Doe">
+                        <label>Họ và tên</label>
+                        <input class="form-control" type="text" placeholder="Nguyễn Văn A">
                     </div>
                     <div class="col-md-6 form-group">
                         <label>E-mail</label>
                         <input class="form-control" type="text" placeholder="example@email.com">
                     </div>
                     <div class="col-md-6 form-group">
-                        <label>Mobile No</label>
+                        <label>Số điện thoại</label>
                         <input class="form-control" type="text" placeholder="+123 456 789">
                     </div>
                     <div class="col-md-6 form-group">
-                        <label>Address Line 1</label>
-                        <input class="form-control" type="text" placeholder="123 Street">
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <label>Address Line 2</label>
-                        <input class="form-control" type="text" placeholder="123 Street">
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <label>Country</label>
-                        <select class="custom-select">
-                            <option selected>United States</option>
-                            <option>Afghanistan</option>
-                            <option>Albania</option>
-                            <option>Algeria</option>
+                        <label>Chọn Tỉnh/ Thành phốx</label>
+                        <select name="city" class="form-select form-select-sm mb-3" id="city" aria-label=".form-select-sm">
+                            <option value="" selected> Tỉnh/ Thành phố</option>
                         </select>
                     </div>
                     <div class="col-md-6 form-group">
-                        <label>City</label>
-                        <input class="form-control" type="text" placeholder="New York">
+                        <label>Chọn Quận/ Huyện</label>
+                        <select name="district" class="form-select form-select-sm mb-3" id="district" aria-label=".form-select-sm">
+                            <option value="" selected>Quận/ Huyện</option>
+                        </select>
                     </div>
                     <div class="col-md-6 form-group">
-                        <label>State</label>
-                        <input class="form-control" type="text" placeholder="New York">
+                        <label>Chọn Phường/ Xã</label>
+                        <select name="ward" class="form-select form-select-sm" id="ward" aria-label=".form-select-sm">
+                            <option value="" selected>Phường/ Xã</option>
+                        </select>
                     </div>
                     <div class="col-md-6 form-group">
-                        <label>ZIP Code</label>
-                        <input class="form-control" type="text" placeholder="123">
+                        <label>Địa chỉ nhận hàng</label>
+                        <input type="text" name="address"></input>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label>Ghi chú</label>
+                        <input class="form-control" type="text" placeholder="" id="Note">
                     </div>
                 </div>
             </div>
@@ -168,10 +168,67 @@
                     </div>
                 </div>
                 <div class="card-footer border-secondary bg-transparent">
-                    <button class="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3">Place Order</button>
+                    <input class="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3" type="submit" > <a href="/Cart/ThankYou"> Place Order</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- Checkout End -->
+<script>
+    ClassicEditor
+        .create(document.querySelector('#Note'))
+        .then(editor => {
+            console.log(editor);
+        })
+        .catch(error => {
+            console.error(error);
+        });
+
+</script>
+<script>
+    var cities = document.getElementById("city");
+    var districts = document.getElementById("district");
+    var wards = document.getElementById("ward");
+
+    fetch("https://raw.githubusercontent.com/kenzouno1/DiaGioiHanhChinhVN/master/data.json")
+        .then(response => response.json())
+        .then(data => {
+            renderCity(data);
+        })
+        .catch(error => {
+            console.error("Lỗi khi lấy dữ liệu JSON:", error);
+        });
+
+    function renderCity(data) {
+        for (const city of data) {
+            cities.options[cities.options.length] = new Option(city.Name, city.Name);
+        }
+
+        cities.onchange = function () {
+            districts.length = 1;
+            wards.length = 1;
+
+            if (this.value !== "") {
+                const selectedCity = data.find(city => city.Name === this.value);
+
+                for (const district of selectedCity.Districts) {
+                    districts.options[districts.options.length] = new Option(district.Name, district.Name);
+                }
+            }
+        };
+
+        districts.onchange = function () {
+            wards.length = 1;
+
+            if (this.value !== "") {
+                const selectedCity = data.find(city => city.Name === cities.value);
+                const selectedDistrict = selectedCity.Districts.find(district => district.Name === this.value);
+
+                for (const ward of selectedDistrict.Wards) {
+                    wards.options[wards.options.length] = new Option(ward.Name, ward.Name);
+                }
+            }
+        };
+    }
+</script>
