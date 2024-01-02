@@ -1,0 +1,72 @@
+﻿@model IEnumerable<CakeShop.Models.User>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>QUản lý tài khoản</h2>
+
+<p>
+    <a asp-action="ThemTaiKhoan" class="btn btn-primary">Tạo tài khoản</a>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.full_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.role)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.phone_number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.created_at)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.updated_at)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.full_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.role)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.phone_number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.created_at)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.updated_at)
+            </td>
+            <td>
+                    <a asp-action="SuaTaiKhoan" asp-route-maTaiKhoan="@item.user_id" class="btn btn-warning">Sửa</a> |
+                    <a asp-action="ChiTietTaiKhoan" asp-route-maTaiKhoan="@item.user_id" class="btn btn-info">Chi tiết</a> |
+                    <a asp-action="XoaTaiKhoan" asp-route-maTaiKhoan="@item.user_id" class="btn btn-danger">Xóa</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

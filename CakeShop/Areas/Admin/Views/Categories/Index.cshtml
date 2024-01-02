@@ -1,0 +1,36 @@
+﻿@model IEnumerable<CakeShop.Models.Category>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="ThemDanhMucSanPham">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                <a asp-action="SuaDanhMucSanPham" asp-route-maDanhMucSanPham="@item.category_id">Edit</a> |
+                    <a asp-action="ChiTietDanhMucSanPham" asp-route-maDanhMucSanPham="@item.category_id">Details</a> |
+                    <a asp-action="XoaDanhMucSanPham" asp-route-maDanhMucSanPham="@item.category_id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

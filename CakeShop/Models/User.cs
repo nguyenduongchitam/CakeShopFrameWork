@@ -12,11 +12,11 @@ namespace CakeShop.Models
         public string email { get; set; }
         [StringLength(50)]
         public string password { get; set; }
-        [StringLength(50)]
+        [StringLength(255)]
         public string role { get; set; }
         [StringLength(50)]
         public string phone_number { get; set;}
         public DateTime? created_at { get; set; } = default(DateTime?);
-        public DateTime? updated_time { get;set; }    
+        public DateTime? updated_at { get;set; }    
     }
 }

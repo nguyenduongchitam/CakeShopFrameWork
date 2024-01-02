@@ -1,635 +1,635 @@
 {
   "Files": [
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CakeShop.bundle.scp.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CakeShop.bundle.scp.css",
       "PackagePath": "staticwebassets\\CakeShop.bundle.scp.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\css\\bootstrap.min.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\css\\font-awesome.min.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\css\\font-awesome.min.css",
       "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\css\\nouislider.min.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\css\\nouislider.min.css",
       "PackagePath": "staticwebassets\\css\\nouislider.min.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\css\\site.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\css\\slick-theme.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\css\\slick-theme.css",
       "PackagePath": "staticwebassets\\css\\slick-theme.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\css\\slick.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\css\\slick.css",
       "PackagePath": "staticwebassets\\css\\slick.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\css\\style.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\css\\style.min.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\css\\style.min.css",
       "PackagePath": "staticwebassets\\css\\style.min.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\favicon.ico",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\fonts\\FontAwesome.otf",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\fonts\\FontAwesome.otf",
       "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\fonts\\fontawesome-webfont.eot",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\fonts\\fontawesome-webfont.svg",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\fonts\\fontawesome-webfont.ttf",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\fonts\\fontawesome-webfont.woff",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\fonts\\fontawesome-webfont.woff2",
       "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\fonts\\slick.eot",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\fonts\\slick.eot",
       "PackagePath": "staticwebassets\\fonts\\slick.eot"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\fonts\\slick.svg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\fonts\\slick.svg",
       "PackagePath": "staticwebassets\\fonts\\slick.svg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\fonts\\slick.ttf",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\fonts\\slick.ttf",
       "PackagePath": "staticwebassets\\fonts\\slick.ttf"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\fonts\\slick.woff",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\fonts\\slick.woff",
       "PackagePath": "staticwebassets\\fonts\\slick.woff"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\2a.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\2a.png",
       "PackagePath": "staticwebassets\\img\\2a.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\2b.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\2b.png",
       "PackagePath": "staticwebassets\\img\\2b.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\2c.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\2c.png",
       "PackagePath": "staticwebassets\\img\\2c.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\2d.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\2d.png",
       "PackagePath": "staticwebassets\\img\\2d.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\3D bear cake.webp",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\3D bear cake.webp",
       "PackagePath": "staticwebassets\\img\\3D bear cake.webp"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\3a.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\3a.png",
       "PackagePath": "staticwebassets\\img\\3a.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\3b.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\3b.png",
       "PackagePath": "staticwebassets\\img\\3b.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\3c.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\3c.png",
       "PackagePath": "staticwebassets\\img\\3c.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\3d.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\3d.png",
       "PackagePath": "staticwebassets\\img\\3d.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\3e.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\3e.png",
       "PackagePath": "staticwebassets\\img\\3e.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\AboutUs.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\AboutUs.jpg",
       "PackagePath": "staticwebassets\\img\\AboutUs.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\BLACKFORESTOPERA01.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\BLACKFORESTOPERA01.jpg",
       "PackagePath": "staticwebassets\\img\\BLACKFORESTOPERA01.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\Banh mi man.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\Banh mi man.jpg",
       "PackagePath": "staticwebassets\\img\\Banh mi man.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\Bánh kem-1.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\Bánh kem-1.jpg",
       "PackagePath": "staticwebassets\\img\\Bánh kem-1.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\Bánh kem-10.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\Bánh kem-10.png",
       "PackagePath": "staticwebassets\\img\\Bánh kem-10.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\Bánh kem-2.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\Bánh kem-2.jpg",
       "PackagePath": "staticwebassets\\img\\Bánh kem-2.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\Bánh kem-3.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\Bánh kem-3.jpg",
       "PackagePath": "staticwebassets\\img\\Bánh kem-3.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\Bánh kem-4.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\Bánh kem-4.jpg",
       "PackagePath": "staticwebassets\\img\\Bánh kem-4.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\Bánh kem-5.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\Bánh kem-5.jpg",
       "PackagePath": "staticwebassets\\img\\Bánh kem-5.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\Bánh kem-6.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\Bánh kem-6.jpg",
       "PackagePath": "staticwebassets\\img\\Bánh kem-6.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\Bánh kem-7.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\Bánh kem-7.jpg",
       "PackagePath": "staticwebassets\\img\\Bánh kem-7.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\Bánh kem-8.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\Bánh kem-8.png",
       "PackagePath": "staticwebassets\\img\\Bánh kem-8.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\Bánh kem-9.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\Bánh kem-9.png",
       "PackagePath": "staticwebassets\\img\\Bánh kem-9.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\CHEESEBRULLECHIFFON01.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\CHEESEBRULLECHIFFON01.jpg",
       "PackagePath": "staticwebassets\\img\\CHEESEBRULLECHIFFON01.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\Contract-1.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\Contract-1.png",
       "PackagePath": "staticwebassets\\img\\Contract-1.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\Header-Logo.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\Header-Logo.png",
       "PackagePath": "staticwebassets\\img\\Header-Logo.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\OPLA03.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\OPLA03.jpg",
       "PackagePath": "staticwebassets\\img\\OPLA03.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\PINEAPPLECOCONUTCHIFFON01.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\PINEAPPLECOCONUTCHIFFON01.jpg",
       "PackagePath": "staticwebassets\\img\\PINEAPPLECOCONUTCHIFFON01.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\RASPBERRYTIRA01.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\RASPBERRYTIRA01.jpg",
       "PackagePath": "staticwebassets\\img\\RASPBERRYTIRA01.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\RASPCHIFFON01.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\RASPCHIFFON01.jpg",
       "PackagePath": "staticwebassets\\img\\RASPCHIFFON01.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\Strawbery cake.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\Strawbery cake.jpg",
       "PackagePath": "staticwebassets\\img\\Strawbery cake.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\a.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\a.jpg",
       "PackagePath": "staticwebassets\\img\\a.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\about us.webp",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\about us.webp",
       "PackagePath": "staticwebassets\\img\\about us.webp"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\aboutus.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\aboutus.png",
       "PackagePath": "staticwebassets\\img\\aboutus.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\aboutus.webp",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\aboutus.webp",
       "PackagePath": "staticwebassets\\img\\aboutus.webp"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\banh-kep1.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\banh-kep1.jpg",
       "PackagePath": "staticwebassets\\img\\banh-kep1.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\banh-kep2.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\banh-kep2.jpg",
       "PackagePath": "staticwebassets\\img\\banh-kep2.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\banh-kep3.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\banh-kep3.jpg",
       "PackagePath": "staticwebassets\\img\\banh-kep3.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\banh-ngot1.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\banh-ngot1.png",
       "PackagePath": "staticwebassets\\img\\banh-ngot1.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\banh-ngot2.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\banh-ngot2.png",
       "PackagePath": "staticwebassets\\img\\banh-ngot2.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\banh-ngot3.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\banh-ngot3.png",
       "PackagePath": "staticwebassets\\img\\banh-ngot3.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\banh-ngot4.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\banh-ngot4.png",
       "PackagePath": "staticwebassets\\img\\banh-ngot4.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\banh-ngot5.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\banh-ngot5.png",
       "PackagePath": "staticwebassets\\img\\banh-ngot5.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\banh-ngot6.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\banh-ngot6.png",
       "PackagePath": "staticwebassets\\img\\banh-ngot6.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\banh-ngot7.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\banh-ngot7.png",
       "PackagePath": "staticwebassets\\img\\banh-ngot7.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\bear.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\bear.jpg",
       "PackagePath": "staticwebassets\\img\\bear.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\cart-empty.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\cart-empty.png",
       "PackagePath": "staticwebassets\\img\\cart-empty.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\cat.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\cat.jpg",
       "PackagePath": "staticwebassets\\img\\cat.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\flower.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\flower.jpg",
       "PackagePath": "staticwebassets\\img\\flower.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\freshcake.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\freshcake.png",
       "PackagePath": "staticwebassets\\img\\freshcake.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\headerhomepage1.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\headerhomepage1.png",
       "PackagePath": "staticwebassets\\img\\headerhomepage1.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\headerhomepage2.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\headerhomepage2.png",
       "PackagePath": "staticwebassets\\img\\headerhomepage2.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\headerhomepage3.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\headerhomepage3.png",
       "PackagePath": "staticwebassets\\img\\headerhomepage3.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\khai-truong.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\khai-truong.jpg",
       "PackagePath": "staticwebassets\\img\\khai-truong.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\lion.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\lion.jpg",
       "PackagePath": "staticwebassets\\img\\lion.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\minion.jfif",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\minion.jfif",
       "PackagePath": "staticwebassets\\img\\minion.jfif"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\parrot.jpg",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\parrot.jpg",
       "PackagePath": "staticwebassets\\img\\parrot.jpg"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\socola cake.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\img\\socola cake.png",
       "PackagePath": "staticwebassets\\img\\socola cake.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\js\\bootstrap.min.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\js\\jquery.min.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\js\\jquery.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.min.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\js\\jquery.zoom.min.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\js\\jquery.zoom.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.zoom.min.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\js\\main.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\js\\main.js",
       "PackagePath": "staticwebassets\\js\\main.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\js\\nouislider.min.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\js\\nouislider.min.js",
       "PackagePath": "staticwebassets\\js\\nouislider.min.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\js\\site.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\js\\slick.min.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\js\\slick.min.js",
       "PackagePath": "staticwebassets\\js\\slick.min.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\easing\\easing.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\easing\\easing.js",
       "PackagePath": "staticwebassets\\lib\\easing\\easing.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\easing\\easing.min.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\easing\\easing.min.js",
       "PackagePath": "staticwebassets\\lib\\easing\\easing.min.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\owlcarousel\\LICENSE",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\owlcarousel\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\owlcarousel"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\owlcarousel\\assets\\ajax-loader.gif",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\ajax-loader.gif"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.css",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.carousel.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.css",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.default.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.css",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.green.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\owlcarousel\\assets\\owl.video.play.png",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.video.play.png"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\owlcarousel\\owl.carousel.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\owlcarousel\\owl.carousel.js",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\owl.carousel.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\lib\\owlcarousel\\owl.carousel.min.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\lib\\owlcarousel\\owl.carousel.min.js",
       "PackagePath": "staticwebassets\\lib\\owlcarousel\\owl.carousel.min.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\mail\\contact.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\mail\\contact.js",
       "PackagePath": "staticwebassets\\mail\\contact.js"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\mail\\contact.php",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\mail\\contact.php",
       "PackagePath": "staticwebassets\\mail\\contact.php"
     },
     {
-      "Id": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\mail\\jqBootstrapValidation.min.js",
+      "Id": "D:\\Do an framework\\CakeShopFrameWork\\CakeShop\\wwwroot\\mail\\jqBootstrapValidation.min.js",
       "PackagePath": "staticwebassets\\mail\\jqBootstrapValidation.min.js"
     },
     {

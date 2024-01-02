@@ -1,0 +1,48 @@
+﻿@model CakeShop.Models.News
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "SuaTinTuc";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>SuaTinTuc</h2>
+
+<h4>News</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="SuaTinTuc" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="news_id" />
+            <div class="form-group">
+                <label asp-for="title" class="control-label"></label>
+                <input asp-for="title" class="form-control" />
+                <span asp-validation-for="title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="content" class="control-label"></label>
+                <input asp-for="content" class="form-control" />
+                <span asp-validation-for="content" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="thumbnail" class="control-label"></label>
+                <input asp-for="thumbnail" class="form-control" value="Them" hidden/>
+                <span asp-validation-for="thumbnail" class="text-danger"></span>
+            </div>
+
+         
+            <img src="~/img/@Model.thumbnail" alt="" style="width: 100px" class="img-thumbnail" />
+
+            <input type="file" id="uploadhinh" name="uploadhinh" accept="image/*" class="form-control" />
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

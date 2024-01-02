@@ -1,0 +1,57 @@
+﻿@model IEnumerable<CakeShop.Models.News>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<!-- Thêm các dòng sau để kết nối với Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-r2mT2NR6c5eTK6KoONwJfQMVxt6mPMP50fnUsQbLgiWtkgF8JCcZOhmBP2ZEl9em" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-d0H6P8Uqa1mb/ooxyg5YDD0Gr9Q4/QbR+nbJ82DcXr2EMeM4zJ8Ozm9Ne4lXl5h" crossorigin="anonymous"></script>
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="ThemTinTuc" class="btn btn-primary">Tạo mới</a>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.title)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.thumbnail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.publish_date)
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.title)
+                </td>
+
+                <td>
+                    <img src="~/img/@item.thumbnail" alt="" style="width: 100px" class="img-thumbnail" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.publish_date)
+                </td>
+                <td>
+                    <a asp-action="SuaTinTuc" asp-route-maTinTuc="@item.news_id" class="btn btn-warning">Edit</a> 
+                    <a asp-action="ChiTietTinTuc" asp-route-maTinTuc="@item.news_id" class="btn btn-info">Details</a> 
+                    <a asp-action="XoaTinTuc" asp-route-maTinTuc="@item.news_id" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -12,15 +12,15 @@ namespace CakeShop.Areas.Admin.Controllers
         }
         public IActionResult quanlytaikhoan()
         {
-            return View();
+            return Redirect("/Admin/Users/Index");
         }
         public IActionResult quanlydanhmucsanpham()
         {
-            return View();
+            return Redirect("/Admin/Categories/Index");
         }
         public IActionResult quanlysanpham()
         {
-            return View();
+            return Redirect("Admin/Products/index");
         }
         public IActionResult quanlyhoadon()
         {
@@ -32,12 +32,15 @@ namespace CakeShop.Areas.Admin.Controllers
         }
         public IActionResult quanlyphanhoi()
         {
-            return View();
+            return Redirect("/Admin/FeedBacks/Index");
         }
         public IActionResult quanlybaocaovathongke()
         {
             return View();
         }
-
+        public IActionResult quanlytintuc()
+        {
+            return Redirect("/Admin/News/Index");
+        }
     }
 }
