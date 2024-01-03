@@ -123,7 +123,7 @@ namespace CakeShop.Controllers
                     .Take(PageSize),
                     PagingInfo = new PagingInfo
                     {
-                        TotalItems = _context.Product.Count(),
+                        TotalItems = _context.Product.Where(p => p.category_id == id).Count(),
                         ItemPerPage = PageSize,
                         CurrentPage = productPage
                     }

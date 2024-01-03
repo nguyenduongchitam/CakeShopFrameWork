@@ -67,49 +67,7 @@
                     </div>
                 </div>
             </div>
-            <div class="collapse mb-4" id="shipping-address">
-                <h4 class="font-weight-semi-bold mb-4">Shipping Address</h4>
-                <div class="row">
-                    <div class="col-md-6 form-group">
-                        <label>Họ và tên</label>
-                        <input class="form-control" type="text" placeholder="Nguyễn Văn A">
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <label>E-mail</label>
-                        <input class="form-control" type="text" placeholder="example@email.com">
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <label>Số điện thoại</label>
-                        <input class="form-control" type="text" placeholder="+123 456 789">
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <label>Chọn Tỉnh/ Thành phốx</label>
-                        <select name="city" class="form-select form-select-sm mb-3" id="city" aria-label=".form-select-sm">
-                            <option value="" selected> Tỉnh/ Thành phố</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <label>Chọn Quận/ Huyện</label>
-                        <select name="district" class="form-select form-select-sm mb-3" id="district" aria-label=".form-select-sm">
-                            <option value="" selected>Quận/ Huyện</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <label>Chọn Phường/ Xã</label>
-                        <select name="ward" class="form-select form-select-sm" id="ward" aria-label=".form-select-sm">
-                            <option value="" selected>Phường/ Xã</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <label>Địa chỉ nhận hàng</label>
-                        <input type="text" name="address"></input>
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <label>Ghi chú</label>
-                        <input class="form-control" type="text" placeholder="" id="Note">
-                    </div>
-                </div>
-            </div>
+            
         </div>
         <div class="col-lg-4">
             <div class="card border-secondary mb-5">
@@ -148,26 +106,7 @@
                 <div class="card-header bg-secondary border-0">
                     <h4 class="font-weight-semi-bold m-0">Payment</h4>
                 </div>
-                <div class="card-body">
-                    <div class="form-group">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" class="custom-control-input" name="payment" id="paypal">
-                            <label class="custom-control-label" for="paypal">Paypal</label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" class="custom-control-input" name="payment" id="directcheck">
-                            <label class="custom-control-label" for="directcheck">Direct Check</label>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="custom-control custom-radio">
-                            <input type="radio" class="custom-control-input" name="payment" id="banktransfer">
-                            <label class="custom-control-label" for="banktransfer">Bank Transfer</label>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="card-footer border-secondary bg-transparent">
                     <button class="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3" type="submit" > <a href="/Cart/ThankYou"> Place Order</a></button>
                 </div>
@@ -176,7 +115,69 @@
         </form>
     </div>
 </div>
-<!-- Checkout End -->
+<div class="card-body">
+    <div class="form-group">
+        <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" name="payment" id="paypal">
+            <label class="custom-control-label" for="paypal">Paypal</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" name="payment" id="directcheck">
+            <label class="custom-control-label" for="directcheck">Direct Check</label>
+        </div>
+    </div>
+    <div class="">
+        <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" name="payment" id="banktransfer">
+            <label class="custom-control-label" for="banktransfer">Bank Transfer</label>
+        </div>
+    </div>
+</div>
+<!-- Checkout End --><div class="collapse mb-4" id="shipping-address">
+    <h4 class="font-weight-semi-bold mb-4">Shipping Address</h4>
+    <div class="row">
+        <div class="col-md-6 form-group">
+            <label>Họ và tên</label>
+            <input class="form-control" type="text" placeholder="Nguyễn Văn A">
+        </div>
+        <div class="col-md-6 form-group">
+            <label>E-mail</label>
+            <input class="form-control" type="text" placeholder="example@email.com">
+        </div>
+        <div class="col-md-6 form-group">
+            <label>Số điện thoại</label>
+            <input class="form-control" type="text" placeholder="+123 456 789">
+        </div>
+        <div class="col-md-6 form-group">
+            <label>Chọn Tỉnh/ Thành phốx</label>
+            <select name="city" class="form-select form-select-sm mb-3" id="city" aria-label=".form-select-sm">
+                <option value="" selected> Tỉnh/ Thành phố</option>
+            </select>
+        </div>
+        <div class="col-md-6 form-group">
+            <label>Chọn Quận/ Huyện</label>
+            <select name="district" class="form-select form-select-sm mb-3" id="district" aria-label=".form-select-sm">
+                <option value="" selected>Quận/ Huyện</option>
+            </select>
+        </div>
+        <div class="col-md-6 form-group">
+            <label>Chọn Phường/ Xã</label>
+            <select name="ward" class="form-select form-select-sm" id="ward" aria-label=".form-select-sm">
+                <option value="" selected>Phường/ Xã</option>
+            </select>
+        </div>
+        <div class="col-md-6 form-group">
+            <label>Địa chỉ nhận hàng</label>
+            <input type="text" name="address"></input>
+        </div>
+        <div class="col-md-6 form-group">
+            <label>Ghi chú</label>
+            <input class="form-control" type="text" placeholder="" id="Note">
+        </div>
+    </div>
+</div>
 <script>
     ClassicEditor
         .create(document.querySelector('#Note'))
