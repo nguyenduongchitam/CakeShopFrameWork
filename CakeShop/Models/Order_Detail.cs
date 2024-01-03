@@ -8,7 +8,7 @@ namespace CakeShop.Models
         [Key]
         public int order_id {  get; set; }
         [ForeignKey("Product")]
-        public string product_id { get; set; }
+        public int product_id { get; set; }
         public int price { get; set; }
         public int num { get; set; }
     }

@@ -16,6 +16,7 @@ namespace CakeShop.Models
         public string role { get; set; }
         [StringLength(50)]
         public string phone_number { get; set;}
+        public string address { get; set; }
         public DateTime? created_at { get; set; } = default(DateTime?);
         public DateTime? updated_time { get;set; }    
     }

@@ -1,8 +1,10 @@
 ﻿using CakeShop.Data;
 using CakeShop.Infrastructure;
 using CakeShop.Models;
+using CakeShop.Shared;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
+using Newtonsoft.Json;
 using NuGet.Protocol.Core.Types;
 
 namespace CakeShop.Controllers
@@ -71,11 +73,97 @@ namespace CakeShop.Controllers
         }
 		public IActionResult CheckOut()
 		{
-			return View(HttpContext.Session.GetJson<Cart>("cart"));
+            ViewBag.Name = "";
+            ViewBag.Phone = "";
+            ViewBag.Address = "";
+            ViewBag.Email = "";
+            if (!String.IsNullOrEmpty(HttpContext.Session.GetString(Const.USERIDSESSION)))
+            {
+                User cus = JsonConvert.DeserializeObject<User>(HttpContext.Session.GetString(Const.USERSESSION).ToString());
+                ViewBag.Name = cus.full_name;
+                ViewBag.Phone = cus.phone_number;
+                ViewBag.Address = cus.address;
+                ViewBag.Email = cus.email;
+            }
+            return View(HttpContext.Session.GetJson<Cart>("cart"));
 		}
 		public IActionResult ThankYou()
 		{
 			return View("ThankYou");
 		}
+        public async Task<IActionResult> AddOrder()
+        {
+            CheckOut checkout = JsonConvert.DeserializeObject<CheckOut>(HttpContext.Session.GetString(Const.CHECKOUTSESSION).ToString());
+            var name = checkout.Name.Trim();
+            var phone = checkout.Phone.Trim();
+            var address = checkout.Address.Trim();
+            var city = checkout.City.Trim();
+            var district = checkout.District.Trim();
+            var note = checkout.Note.Trim();
+            var ward = checkout.Ward.Trim();
+            
+            if (String.IsNullOrEmpty(HttpContext.Session.GetString(Const.USERIDSESSION)))
+            {
+                string cus_id = HttpContext.Session.GetString(Const.CARTSESSION).ToString();
+                User cus = new User()
+                {
+                    user_id = int.Parse(cus_id),
+                    full_name = name,
+                    phone_number = phone,
+                    address = address
+                };
+                _context.User.Add(cus);
+                await _context.SaveChangesAsync();
+            }
+            Cart = HttpContext.Session.GetJson<Cart>("cart");
+            decimal? totalOrder = Cart.ComputeTotalValue();
+            string orderId = Guid.NewGuid().ToString();
+            Order order = new Order()
+            {
+                order_id = int.Parse(orderId),
+                address = address,
+                user_id = int.Parse(HttpContext.Session.GetString(Const.CARTSESSION).ToString()),
+                total_money = (int)totalOrder,
+                created_at = DateTime.Now,
+                city = city,
+                district = district,
+                note = note,
+                ward = ward,
+                delivery_money=10000,
+                status = StatusConst.WAITCONFIRM
+            };
+            _context.Order.Add(order);
+            await _context.SaveChangesAsync();
+
+            // thêm sản phẩm vào đơn hàng
+            foreach (var item in Cart.Lines)
+            {
+                try
+                {
+                    Order_Detail orderDetail = new Order_Detail()
+                    {
+                        order_id = int.Parse(orderId),
+                        num = item.Quantity,
+                        product_id = item.Product.product_id,
+                        price = item.Product.price,
+
+                    };
+                    _context.Order_Detail.Add(orderDetail);
+
+                }
+                catch (Exception e)
+                {
+                    throw;
+                }
+
+            }
+            order.total_money = (int)totalOrder + order.delivery_money;
+            _context.Order.Update(order);
+            await _context.SaveChangesAsync();
+            //_notyfService.Success("Đã đặt hàng thành công! Cảm ơn quý khách hàng đã ủng hộ", 10);
+            Cart.Clear();
+            return Redirect("ThankYou");
+        }
+
     }
 }

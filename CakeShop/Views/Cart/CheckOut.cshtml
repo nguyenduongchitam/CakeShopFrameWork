@@ -9,21 +9,22 @@
 <!-- Checkout Start -->
 <div class="container-fluid pt-5">
     <div class="row px-xl-5">
+        <form  method="post" action="@Url.Action("CheckOut")">
         <div class="col-lg-8">
-            <div class="mb-4" asp-action="Checkout" method="post">
+            <div class="mb-4" >
                 <h4 class="font-weight-semi-bold mb-4">Billing Address</h4>
                 <div class="row">
                     <div class="col-md-6 form-group">
                         <label>Họ và tên</label>
-                        <input class="form-control" type="text" placeholder="Nguyễn Văn A" >
+                        <input class="form-control" type="text" placeholder="Nguyễn Văn A" value="@ViewBag.Name" >
                     </div>
                     <div class="col-md-6 form-group">
                         <label>E-mail</label>
-                        <input class="form-control" type="text" placeholder="example@email.com">
+                            <input class="form-control" type="text" placeholder="example@email.com" value="@ViewBag.Email">
                     </div>
                     <div class="col-md-6 form-group">
                         <label>Số điện thoại</label>
-                        <input class="form-control" type="text" placeholder="0979599999">
+                            <input class="form-control" type="text" placeholder="0979599999" value="@ViewBag.Phone">
                     </div>
                     
                     <div class="col-md-6 form-group">
@@ -46,7 +47,7 @@
                     </div>
                     <div class="col-md-6 form-group">
                         <label>Địa chỉ nhận hàng</label>
-                        <input type="text" name="address"></input>
+                            <input type="text" name="address" value="@ViewBag.Address"></input>
                     </div>
                     <div class="col-md-6 form-group">
                         <label>Ghi chú</label> 
@@ -168,10 +169,11 @@
                     </div>
                 </div>
                 <div class="card-footer border-secondary bg-transparent">
-                    <input class="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3" type="submit" > <a href="/Cart/ThankYou"> Place Order</a>
+                    <button class="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3" type="submit" > <a href="/Cart/ThankYou"> Place Order</a></button>
                 </div>
             </div>
         </div>
+        </form>
     </div>
 </div>
 <!-- Checkout End -->
@@ -232,3 +234,26 @@
         };
     }
 </script>
+@section scripts{
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict'
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation')
+
+                    // Loop over them and prevent submission
+                    Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            }
+                            form.classList.add('was-validated')
+                        }, false)
+                    })
+                }, false)
+            }())
+        </script>
+        }
