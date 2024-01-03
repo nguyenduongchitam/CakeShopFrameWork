@@ -93,7 +93,7 @@ namespace CakeShop.Controllers
 		}
         public async Task<IActionResult> AddOrder()
         {
-            CheckOut checkout = JsonConvert.DeserializeObject<CheckOut>(HttpContext.Session.GetString(Const.CHECKOUTSESSION).ToString());
+            CheckOut checkout = JsonConvert.DeserializeObject<CheckOut>(HttpContext.Session.GetString(Const.CHECKOUTSESSION));
             var name = checkout.Name.Trim();
             var phone = checkout.Phone.Trim();
             var address = checkout.Address.Trim();
@@ -101,20 +101,21 @@ namespace CakeShop.Controllers
             var district = checkout.District.Trim();
             var note = checkout.Note.Trim();
             var ward = checkout.Ward.Trim();
-            
+
             if (String.IsNullOrEmpty(HttpContext.Session.GetString(Const.USERIDSESSION)))
             {
-                string cus_id = HttpContext.Session.GetString(Const.CARTSESSION).ToString();
                 User cus = new User()
                 {
-                    user_id = int.Parse(cus_id),
                     full_name = name,
                     phone_number = phone,
                     address = address
                 };
                 _context.User.Add(cus);
                 await _context.SaveChangesAsync();
+
+                HttpContext.Session.SetString(Const.USERIDSESSION, cus.user_id.ToString());
             }
+
             Cart = HttpContext.Session.GetJson<Cart>("cart");
             decimal? totalOrder = Cart.ComputeTotalValue();
             string orderId = Guid.NewGuid().ToString();
@@ -122,20 +123,20 @@ namespace CakeShop.Controllers
             {
                 order_id = int.Parse(orderId),
                 address = address,
-                user_id = int.Parse(HttpContext.Session.GetString(Const.CARTSESSION).ToString()),
+                user_id = int.Parse(HttpContext.Session.GetString(Const.USERIDSESSION)),
                 total_money = (int)totalOrder,
                 created_at = DateTime.Now,
                 city = city,
                 district = district,
                 note = note,
                 ward = ward,
-                delivery_money=10000,
+                delivery_money = 10000,
                 status = StatusConst.WAITCONFIRM
             };
             _context.Order.Add(order);
             await _context.SaveChangesAsync();
 
-            // thêm sản phẩm vào đơn hàng
+            // Thêm sản phẩm vào đơn hàng
             foreach (var item in Cart.Lines)
             {
                 try
@@ -146,20 +147,19 @@ namespace CakeShop.Controllers
                         num = item.Quantity,
                         product_id = item.Product.product_id,
                         price = item.Product.price,
-
                     };
                     _context.Order_Detail.Add(orderDetail);
-
                 }
                 catch (Exception e)
                 {
                     throw;
                 }
-
             }
+
             order.total_money = (int)totalOrder + order.delivery_money;
             _context.Order.Update(order);
             await _context.SaveChangesAsync();
+
             //_notyfService.Success("Đã đặt hàng thành công! Cảm ơn quý khách hàng đã ủng hộ", 10);
             Cart.Clear();
             return Redirect("ThankYou");
