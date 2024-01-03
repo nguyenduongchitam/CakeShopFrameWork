@@ -1,6 +1,7 @@
 using CakeShop.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,7 +39,6 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
-
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapAreaControllerRoute(

@@ -7,14 +7,14 @@ namespace CakeShop.Models
         [Key]
         public int feedback_id {  get; set; }
         [StringLength(50)]
-        public string firstname { get; set; }
+        public string ?firstname { get; set; }
         [StringLength(50)]
-        public string lastname { get; set; }
+        public string ?lastname { get; set; }
         [StringLength(50)]
-        public string email { get; set; }
+        public string ?email { get; set; }
         [StringLength(50)]
-        public string phone_number { get; set; }
+        public string ?phone_number { get; set; }
         [StringLength(255)]
-        public string note { get; set; }
+        public string ?note { get; set; }
     }
 }

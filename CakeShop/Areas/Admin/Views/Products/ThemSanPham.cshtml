@@ -1,21 +1,21 @@
 ﻿@model CakeShop.Models.Product
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "ThemSanPham";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h1>Create</h1>
+<h2>Thêm sản phẩm</h2>
 
 <h4>Product</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="ThemSanPham" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="category_id" class="control-label"></label>
-                <input asp-for="category_id" class="form-control" />
-                <span asp-validation-for="category_id" class="text-danger"></span>
+                <select asp-for="category_id" class="form-control" asp-items="ViewBag.category_id"></select>
             </div>
             <div class="form-group">
                 <label asp-for="title" class="control-label"></label>
@@ -39,30 +39,18 @@
             </div>
             <div class="form-group">
                 <label asp-for="thumbnail" class="control-label"></label>
-                <input asp-for="thumbnail" class="form-control" />
+                <input asp-for="thumbnail" class="form-control" value="Them" hidden />
                 <span asp-validation-for="thumbnail" class="text-danger"></span>
             </div>
+            <input type="file" id="uploadhinh" name="uploadhinh" accept="image/*" class="form-control" />
+
             <div class="form-group">
-                <label asp-for="created_at" class="control-label"></label>
-                <input asp-for="created_at" class="form-control" />
-                <span asp-validation-for="created_at" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="updated_at" class="control-label"></label>
-                <input asp-for="updated_at" class="form-control" />
-                <span asp-validation-for="updated_at" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-default" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index"> Back to List</a>
 </div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

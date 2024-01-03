@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7AcjUySwCb/Z8XTT2j2OTajPleqlIqYJbWFR3sSgGKU=",
+  "Hash": "aJzB8he5wIauyS4tf0LWCss1qESwODRjYOthifKW6Bs=",
   "Source": "CakeShop",
   "BasePath": "_content/CakeShop",
   "Mode": "Default",
@@ -2344,6 +2344,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\RASPCHIFFON01.jpg"
+    },
+    {
+      "Identity": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\shin bụng bự.jpg",
+      "SourceId": "CakeShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\",
+      "BasePath": "_content/CakeShop",
+      "RelativePath": "img/shin bụng bự.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\shin bụng bự.jpg"
     },
     {
       "Identity": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\wwwroot\\img\\socola cake.png",

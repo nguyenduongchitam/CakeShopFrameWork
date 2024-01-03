@@ -2,19 +2,17 @@
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h1>Index</h1>
+<h2>Quản lý sản phẩm </h2>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="ThemSanPham" class="btn btn-primary">Thêm mới</a>
 </p>
-<table class="table">
+<table class="table table-bordered">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.category_id)
-            </th>
             <th>
                 @Html.DisplayNameFor(model => model.title)
             </th>
@@ -36,42 +34,46 @@
             <th>
                 @Html.DisplayNameFor(model => model.updated_at)
             </th>
-            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.category_id)
+            </th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.category_id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.discount_price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.thumbnail)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.created_at)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.updated_at)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.product_id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.product_id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.product_id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.discount_price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.description)
+                </td>
+                <td>
+                    <img src="~/img/@item.thumbnail" alt="" style="width: 100px" class="img-thumbnail" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.created_at)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.updated_at)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category.name)
+                </td>
+                <td>
+                    <a asp-action="SuaSanPham" asp-route-maSanPham="@item.product_id" class="btn btn-warning">Sửa</a>
+                    <a asp-action="ChiTietSanPham" asp-route-maSanPham="@item.product_id" class="btn btn-info">Chi tiết</a>
+                    <a asp-action="XoaSanPham" asp-route-maSanPham="@item.product_id" class="btn btn-danger">Xóa</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

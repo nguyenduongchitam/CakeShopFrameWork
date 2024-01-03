@@ -3,6 +3,7 @@
 *@
 @{
 }
+@model FeedBack
 <div class="contractbody">
     <hr border="2">
     <img src="./img/Contract-1.png" alt="pic" style="padding-left:50px">
@@ -23,32 +24,33 @@
     <div class="container">
         <div class="form-container">
             <h1 style="text-align:center">Liên hệ <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></h1>
-            <form method="POST">
+
+            <form method="POST" action="@Url.Action("AddContact", "Contact")">
                 <table class="table">
                     <tr>
                         <td>
-                            <input type="text" name="firstname" placeholder="Họ" class="form-control">
+                            <input type="text" name="firstname" placeholder="Họ" class="form-control" value="@Model?.firstname">
                         </td>
                         <td>
-                            <input type="text" name="lastname" placeholder="Tên" class="form-control">
+                            <input type="text" name="lastname" placeholder="Tên" class="form-control" value="@Model?.lastname">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" name="email" placeholder="Email" class="form-control">
+                            <input type="text" name="email" placeholder="Email" class="form-control" value="@Model?.email">
                         </td>
                         <td>
-                            <input type="text" name="phone" placeholder="Số điện thoại" class="form-control">
+                            <input type="text" name="phone_number" placeholder="Số điện thoại" class="form-control" value="@Model?.phone_number">
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <textarea placeholder="Nội dung" name="note" class="form-control"></textarea>
+                            <textarea placeholder="Nội dung" name="note" class="form-control">@Model?.note</textarea>
                         </td>
                     </tr>
                     <tr style="text-align: center">
                         <td colspan="2">
-                            <input type="submit" name="sent" class="btn btn-primary">
+                            <input type="submit" name="sent" class="btn btn-primary" value="Gửi">
                         </td>
                     </tr>
                 </table>

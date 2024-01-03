@@ -1,9 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-
 using CakeShop.Data;
 using CakeShop.Models;
-using System.Security.Claims;
+using Microsoft.AspNetCore.Hosting;
 
 namespace CakeShop.Areas.Admin.Controllers
 {
@@ -11,162 +15,113 @@ namespace CakeShop.Areas.Admin.Controllers
     public class ProductsController : Controller
     {
         private readonly ApplicationDbContext _context;
-
-        public ProductsController(ApplicationDbContext context)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public ProductsController(ApplicationDbContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         // GET: Admin/Products
         public async Task<IActionResult> Index()
         {
-              return _context.Product != null ? 
-                          View(await _context.Product.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Product'  is null.");
+            var applicationDbContext = _context.Product.Include(p => p.Category);
+            return View(await applicationDbContext.ToListAsync());
         }
 
         // GET: Admin/Products/Details/5
-        public async Task<IActionResult> Details(int? id)
+        [Route("ThemSanPham")]
+        [HttpGet]
+        public IActionResult ThemSanPham()
         {
-            if (id == null || _context.Product == null)
-            {
-                return NotFound();
-            }
-
-            var product = await _context.Product
-                .FirstOrDefaultAsync(m => m.product_id == id);
-            if (product == null)
-            {
-                return NotFound();
-            }
-
-            return View(product);
-        }
-
-        // GET: Admin/Products/Create
-        public IActionResult Create()
-        {
+            ViewBag.category_id = new SelectList(_context.Category.ToList(), "category_id", "name");
             return View();
         }
-
-        // POST: Admin/Products/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Route("ThemSanPham")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("product_id,category_id,title,price,discount_price,description,thumbnail,created_at,updated_at")] Product product)
+        public IActionResult ThemSanPham(Product SanPham, IFormFile uploadhinh)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(product);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(product);
-        }
+                if (uploadhinh != null && uploadhinh.Length > 0)
+                {
+                    string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "img");
+                    string uniqueFileName = uploadhinh.FileName;
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                    uploadhinh.CopyTo(new FileStream(filePath, FileMode.Create));
+                    SanPham.thumbnail = uniqueFileName;
+                }
+                DateTime currentDate = DateTime.Now;
+                SanPham.created_at = currentDate;
+                SanPham.updated_at = currentDate;
+                _context.Product.Add(SanPham);
+                _context.SaveChanges();
+                return RedirectToAction("Index");
 
-        // GET: Admin/Products/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+            }
+            return View(SanPham);
+        }
+        [Route("SuaSanPham")]
+        [HttpGet]
+        public IActionResult SuaSanPham(int maSanPham)
         {
-            if (id == null || _context.Product == null)
-            {
-                return NotFound();
-            }
-
-            var product = await _context.Product.FindAsync(id);
-            if (product == null)
-            {
-                return NotFound();
-            }
-            return View(product);
+            ViewBag.category_id = new SelectList(_context.Category.ToList(), "category_id", "name");
+            var SanPham = _context.Product.Find(maSanPham);
+            return View(SanPham);
         }
 
-        // POST: Admin/Products/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [Route("SuaSanPham")]
         [HttpPost]
         [ValidateAntiForgeryToken]
-        //public async Task<IActionResult> Edit(int id, [Bind("product_id,category_id,title,price,discount_price,description,thumbnail,created_at,updated_at")] Product product)
-        //{
-        //    if (id != product.product_id)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    if (ModelState.IsValid)
-        //    {
-        //        var productEdit = _context.Product.Find(id);
-        //        productEdit.title = Utilities.ToTitleCase(product.title);
-        //        productEdit.product_id = product.product_id;
-        //        productEdit.price = product.price;
-        //        productEdit.discount_price = product.discount_price;
-        //        productEdit.thumbnail = product.thumbnail;
-        //        productEdit.Ram = product.Ram;
-        //        productEdit.BrandId = product.BrandId;
-        //        productEdit.CategoryId = product.CategoryId;
-        //        productEdit.Description = product.Description;
-        //        if (fThumb != null)
-        //        {
-        //            string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "img", "product", product.Image);
-        //            if (System.IO.File.Exists(path))
-        //            {
-        //                System.IO.File.Delete(path);
-        //            }
-        //            string extension = Path.GetExtension(fThumb.FileName);
-        //            productEdit.Image = Utilities.SEOUrl(productEdit.Name) + $"-{productEdit.Id}" + extension;
-        //            await Utilities.UploadFile(fThumb, @"product", productEdit.Image);
-
-        //        }
-        //        productEdit.UpdateUserId = User.FindFirstValue(Const.ADMINIDSESSION).ToString();
-        //        productEdit.UpdatedAt = DateTime.Now;
-        //        _context.Products.Update(productEdit);
-        //        await _context.SaveChangesAsync();
-        //        _notyfService.Success("Cập nhật sản phẩm thành công");
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    return View(product);
-        //}
-
-        // GET: Admin/Products/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public IActionResult SuaSanPham(Product SanPham, IFormFile uploadhinh)
         {
-            if (id == null || _context.Product == null)
+            if (ModelState.IsValid)
             {
-                return NotFound();
-            }
+                if (uploadhinh != null && uploadhinh.Length > 0)
+                {
+                    string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "img");
+                    string uniqueFileName = Guid.NewGuid().ToString() + "_" + uploadhinh.FileName;
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                    uploadhinh.CopyTo(new FileStream(filePath, FileMode.Create));
+                    SanPham.thumbnail = uniqueFileName;
+                }
 
-            var product = await _context.Product
-                .FirstOrDefaultAsync(m => m.product_id == id);
-            if (product == null)
-            {
-                return NotFound();
-            }
+                DateTime currentDate = DateTime.Now;
 
-            return View(product);
+                SanPham.updated_at = currentDate;
+                _context.Entry(SanPham).State = EntityState.Modified;
+                _context.SaveChanges();
+
+                return RedirectToAction("Index");
+
+            }
+            return View(SanPham);
+        }
+        [Route("ChiTietSanPham")]
+        [HttpGet]
+        public IActionResult ChiTietSanPham(int maSanPham)
+        {
+            var SanPham = _context.Product.Find(maSanPham);
+            return View(SanPham);
+        }
+        [Route("XoaSanPham")]
+        [HttpGet]
+        public IActionResult XoaSanPham(int maSanPham)
+        {
+            var SanPham = _context.Product.Find(maSanPham);
+            return View(SanPham);
         }
 
-        // POST: Admin/Products/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [Route("XacNhanXoaSanPham")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public IActionResult XacNhanXoaSanPham(Product SanPham)
         {
-            if (_context.Product == null)
-            {
-                return Problem("Entity set 'ApplicationDbContext.Product'  is null.");
-            }
-            var product = await _context.Product.FindAsync(id);
-            if (product != null)
-            {
-                _context.Product.Remove(product);
-            }
-            
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
 
-        private bool ProductExists(int id)
-        {
-          return (_context.Product?.Any(e => e.product_id == id)).GetValueOrDefault();
+            _context.Product.Remove(SanPham);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }
