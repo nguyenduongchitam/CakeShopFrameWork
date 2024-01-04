@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\CakeShop.csproj": {}
+    "D:\\C#\\Đồ án\\CakeShopFrameWork\\CakeShop\\CakeShop.csproj": {}
   },
   "projects": {
-    "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\CakeShop.csproj": {
+    "D:\\C#\\Đồ án\\CakeShopFrameWork\\CakeShop\\CakeShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\CakeShop.csproj",
+        "projectUniqueName": "D:\\C#\\Đồ án\\CakeShopFrameWork\\CakeShop\\CakeShop.csproj",
         "projectName": "CakeShop",
-        "projectPath": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\CakeShop.csproj",
-        "packagesPath": "C:\\Users\\kakas\\.nuget\\packages\\",
-        "outputPath": "D:\\trường\\Năm 3\\Xây dựng httt trên framework\\CakeShop\\CakeShop\\obj\\",
+        "projectPath": "D:\\C#\\Đồ án\\CakeShopFrameWork\\CakeShop\\CakeShop.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\Đồ án\\CakeShopFrameWork\\CakeShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kakas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
