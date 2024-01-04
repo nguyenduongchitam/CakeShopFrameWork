@@ -9,6 +9,7 @@
         public string Ward { get; set; }
         public string District { get; set; }
         public string Note { get; set; }
+        public string Email { get; set; }
         public string City { get; set; }
         public decimal? Discount { get; set; } = 0;
     }

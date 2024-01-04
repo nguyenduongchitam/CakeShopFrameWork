@@ -1,6 +1,7 @@
 ﻿using CakeShop.Data;
 using CakeShop.Infrastructure;
 using CakeShop.Models;
+using CakeShop.Services;
 using CakeShop.Shared;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
@@ -18,7 +19,91 @@ namespace CakeShop.Controllers
 			_context = context;
 			//Cart = new Cart();
 		}
-		public Cart? Cart { get; set; }
+        private readonly IEmailService _emailService;
+
+        //public CartController(IEmailService emailService)
+        //{
+        //    _emailService = emailService;
+        //}
+        public async Task<IActionResult> AddOrder()
+        {
+            CheckOut checkout = JsonConvert.DeserializeObject<CheckOut>(HttpContext.Session.GetString(Const.CHECKOUTSESSION));
+            var name = checkout.Name.Trim();
+            var phone = checkout.Phone.Trim();
+            var address = checkout.Address.Trim();
+            var city = checkout.City.Trim();
+            var district = checkout.District.Trim();
+            var note = checkout.Note.Trim();
+            var ward = checkout.Ward.Trim();
+            var email = checkout.Email.Trim();
+
+            if (String.IsNullOrEmpty(HttpContext.Session.GetString(Const.USERIDSESSION)))
+            {
+                User cus = new User()
+                {
+                    full_name = name,
+                    phone_number = phone,
+                    address = address
+                };
+                _context.User.Add(cus);
+                await _context.SaveChangesAsync();
+
+                HttpContext.Session.SetString(Const.USERIDSESSION, cus.user_id.ToString());
+            }
+
+            Cart = HttpContext.Session.GetJson<Cart>("cart");
+            decimal? totalOrder = Cart.ComputeTotalValue();
+            string orderId = Guid.NewGuid().ToString();
+            Order order = new Order()
+            {
+                order_id = int.Parse(orderId),
+                address = address,
+                user_id = int.Parse(HttpContext.Session.GetString(Const.USERIDSESSION)),
+                total_money = (int)totalOrder,
+                created_at = DateTime.Now,
+                city = city,
+                district = district,
+                note = note,
+                ward = ward,
+                delivery_money = 10000,
+                status = StatusConst.WAITCONFIRM
+            };
+            _context.Order.Add(order);
+            await _context.SaveChangesAsync();
+
+            // Thêm sản phẩm vào đơn hàng
+            foreach (var item in Cart.Lines)
+            {
+                try
+                {
+                    Order_Detail orderDetail = new Order_Detail()
+                    {
+                        order_id = int.Parse(orderId),
+                        num = item.Quantity,
+                        product_id = item.Product.product_id,
+                        price = item.Product.price,
+                    };
+                    _context.Order_Detail.Add(orderDetail);
+                }
+                catch (Exception e)
+                {
+                    throw;
+                }
+            }
+
+            order.total_money = (int)totalOrder + order.delivery_money;
+            _context.Order.Update(order);
+            await _context.SaveChangesAsync();
+
+            //_notyfService.Success("Đã đặt hàng thành công! Cảm ơn quý khách hàng đã ủng hộ", 10);
+            string subject = "Đặt hàng thành công";
+            string body = "Cảm ơn quý khách hàng đã đặt hàng thành công! Chúng tôi sẽ xử lý đơn hàng của bạn trong thời gian sớm nhất.";
+
+            await _emailService.SendEmailAsync(subject, body, email);
+            Cart.Clear();
+            return Redirect("ThankYou");
+        }
+        public Cart? Cart { get; set; }
 		public IActionResult Index()
 		{
 			return View("Cart", HttpContext.Session.GetJson<Cart>("cart"));
@@ -91,79 +176,7 @@ namespace CakeShop.Controllers
 		{
 			return View("ThankYou");
 		}
-        public async Task<IActionResult> AddOrder()
-        {
-            CheckOut checkout = JsonConvert.DeserializeObject<CheckOut>(HttpContext.Session.GetString(Const.CHECKOUTSESSION));
-            var name = checkout.Name.Trim();
-            var phone = checkout.Phone.Trim();
-            var address = checkout.Address.Trim();
-            var city = checkout.City.Trim();
-            var district = checkout.District.Trim();
-            var note = checkout.Note.Trim();
-            var ward = checkout.Ward.Trim();
-
-            if (String.IsNullOrEmpty(HttpContext.Session.GetString(Const.USERIDSESSION)))
-            {
-                User cus = new User()
-                {
-                    full_name = name,
-                    phone_number = phone,
-                    address = address
-                };
-                _context.User.Add(cus);
-                await _context.SaveChangesAsync();
-
-                HttpContext.Session.SetString(Const.USERIDSESSION, cus.user_id.ToString());
-            }
-
-            Cart = HttpContext.Session.GetJson<Cart>("cart");
-            decimal? totalOrder = Cart.ComputeTotalValue();
-            string orderId = Guid.NewGuid().ToString();
-            Order order = new Order()
-            {
-                order_id = int.Parse(orderId),
-                address = address,
-                user_id = int.Parse(HttpContext.Session.GetString(Const.USERIDSESSION)),
-                total_money = (int)totalOrder,
-                created_at = DateTime.Now,
-                city = city,
-                district = district,
-                note = note,
-                ward = ward,
-                delivery_money = 10000,
-                status = StatusConst.WAITCONFIRM
-            };
-            _context.Order.Add(order);
-            await _context.SaveChangesAsync();
-
-            // Thêm sản phẩm vào đơn hàng
-            foreach (var item in Cart.Lines)
-            {
-                try
-                {
-                    Order_Detail orderDetail = new Order_Detail()
-                    {
-                        order_id = int.Parse(orderId),
-                        num = item.Quantity,
-                        product_id = item.Product.product_id,
-                        price = item.Product.price,
-                    };
-                    _context.Order_Detail.Add(orderDetail);
-                }
-                catch (Exception e)
-                {
-                    throw;
-                }
-            }
-
-            order.total_money = (int)totalOrder + order.delivery_money;
-            _context.Order.Update(order);
-            await _context.SaveChangesAsync();
-
-            //_notyfService.Success("Đã đặt hàng thành công! Cảm ơn quý khách hàng đã ủng hộ", 10);
-            Cart.Clear();
-            return Redirect("ThankYou");
-        }
+        
 
     }
 }
