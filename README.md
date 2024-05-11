@@ -6,3 +6,6 @@
 Hiểu cách kết nối giữa front end và back end, cách hoạt động mô hình mvc, công nghệ của .net đem lại
 ## Hướng dẫn cài đặt 
 Đồ án sử dụng .NET core 6.0
+##Giao diện và các chức năng cơ bản 
+1.Trang chủ 
+![example](home_page.png)
