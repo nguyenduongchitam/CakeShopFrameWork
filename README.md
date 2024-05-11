@@ -15,3 +15,5 @@ Hiểu cách kết nối giữa front end và back end, cách hoạt động mô
 ![example](cart.png)
 3. Category
 ![example](category.png)
+4. Checkout
+![example](checkout.png)
