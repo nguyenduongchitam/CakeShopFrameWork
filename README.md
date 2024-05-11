@@ -10,3 +10,4 @@ Hiểu cách kết nối giữa front end và back end, cách hoạt động mô
 
 1. Trang chủ 
 ![example](home_page.png)
+![example](home_page2.png)
