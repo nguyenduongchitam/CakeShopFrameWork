@@ -15,12 +15,19 @@ namespace CakeShop.Models
         public string city { get; set;}
         [StringLength(60)]
         public string district { get; set;}
+
         [StringLength(60)]
         public string ward { get; set;}
-        public int discount { get; set;}
-        public DateTime? created_at { get; set; } = default(DateTime?);
+
+        [StringLength(60)]
+        public string address { get; set; }
+
+        public int delivery_money { get; set; }
+       
+        public DateTime? order_date { get; set; } = default(DateTime?);
+        public bool status { get; set; }
         public int total_money { get; set; }
-        public bool status {  get; set; }
+      
 
     }
 }

@@ -24,7 +24,7 @@ namespace CakeShop.Areas.Admin.Controllers
         }
         public IActionResult quanlyhoadon()
         {
-            return View();
+            return Redirect("/Admin/Orders/Index");
         }
         public IActionResult quanlykhachhang()
         {

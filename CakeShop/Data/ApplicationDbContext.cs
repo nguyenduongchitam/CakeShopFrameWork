@@ -15,5 +15,7 @@ namespace CakeShop.Data
         public DbSet<CakeShop.Models.News>? News { get; set; }
         public DbSet<CakeShop.Models.FeedBack>? FeedBack { get; set; }
         public DbSet<CakeShop.Models.User>? User { get; set; }
+        public DbSet<CakeShop.Models.Order>? Order { get; set; }
+        public DbSet<CakeShop.Models.Order_Detail>? Order_Detail { get; set; }
     }
 }
